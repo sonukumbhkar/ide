@@ -14,7 +14,7 @@ SECRET_KEY = 'liifsna8pyus991kr@99+3@2k4=d2fvha=#^yk$(xizfc81!r3'
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['free-ide.herokuapp.com']
+ALLOWED_HOSTS = ['free-ide.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -100,6 +100,6 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-STATIC_ROOT  =   BASE_DIR/ 'static'
+STATIC_ROOT  =   BASE_DIR / 'static'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
