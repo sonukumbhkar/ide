@@ -1,4 +1,4 @@
-import os
+
 from pathlib import Path
 
 
@@ -14,7 +14,7 @@ SECRET_KEY = 'liifsna8pyus991kr@99+3@2k4=d2fvha=#^yk$(xizfc81!r3'
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['online-python-ide.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['free-ide.herokuapp.com']
 
 
 # Application definition
@@ -100,12 +100,6 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-
-PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
 STATIC_ROOT  =   BASE_DIR/ 'static'
-
-
-
-
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
