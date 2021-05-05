@@ -2,12 +2,12 @@
 {% load static %}
 <title>ide </title>
 <body >
-    <nav style="border:solid black;height:auto;width:auto;font-family:cursive; text-align:center;background-color: green;"><h1 style='align-items: center;text-align: center; color: honeydew;'> WELCOME TO MY IDE</h1></nav>
+    <nav style="border:solid black;height:auto;width:max-content;font-family:cursive; text-align:center;background-color: green;"><h1 style='align-items: center;text-align: center; color: honeydew;'> WELCOME TO MY IDE</h1></nav>
     <form action='/Goback' method="POST">
         {% csrf_token %}
     
     <h3>coding area</h3>
-    <textarea name="code"  style="margin: 0px 493px 0px 0px; width: 1289px; height: 377px; border: solid green;">{{code}}</textarea>
+    <textarea name="code"  style="margin: 0px 493px 0px 0px; width:max-content; height: 377px; border: solid green;">{{code}}</textarea>
     <button type="submit" style=" margin-left: 1100px;color: honeydew;font-size: 20px;width: 180px; border-radius: 10px;display: inline-block; background-color: green;">Run code</button>
     <h3>input</h3>
     <textarea  name="Input area" style="margin: 0px; height: 138px; width: 670px;border:solid green ">{{Input}}</textarea>
